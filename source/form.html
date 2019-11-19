@@ -21,27 +21,26 @@
     </div>
   </header>
 
-    <main class="page-main">
-      <section class="page-main__form">
-        <h1 class="page-main__title">Подбор программы</h1>
-        <p class="page-main__subtitle">Заполните анкету и мы подберём программу питания для вашего кота</p>
-
+    <main class="form-page-main">
+      <section class="form-page-main__form">
         <form action="https://echo.htmlacademy.ru">
           <fieldset class="main-info">
-            <div class="main-info__wrapper">
-              <div class="main-info__field input input_type_string">
-                <label for="name" class="input__label">ИМЯ:</label>
-                <input id="name" name="name" class="input__control" type="text" value="Барсик">
+              <div class="main-info__wrapper">
+                <h1 class="main-info__title">Подбор программы</h1>
+                <p class="main-info__subtitle">Заполните анкету и мы подберём программу питания для вашего кота</p>
+                <div class="main-info__field input input_type_string">
+                  <label for="name" class="input__label">ИМЯ:</label>
+                  <input id="name" name="name" class="input__control" type="text" value="Барсик">
+                </div>
+                <div class="main-info__field input input_type_float">
+                  <label for="weight" class="input__label">ВЕС (кг):</label>
+                  <input id="weight" name="weight" class="input__control" type="text" value="7">
+                </div>
+                <div class="main-info__field input input_type_integer">
+                  <label for="age" class="input__label">ВОЗРАСТ (лет):</label>
+                  <input id="age" name="age" class="input__control" type="text" value="7">
+                </div>
               </div>
-              <div class="main-info__field input input_type_float">
-                <label for="weight" class="input__label">ВЕС (кг):</label>
-                <input id="weight" name="weight" class="input__control" type="text" value="7">
-              </div>
-              <div class="main-info__field input input_type_integer">
-                <label for="age" class="input__label">ВОЗРАСТ (лет):</label>
-                <input id="age" name="age" class="input__control" type="text" value="7">
-              </div>
-            </div>
           </fieldset>
 
           <fieldset class="program-type">
@@ -108,17 +107,19 @@
             </div>
           </fieldset>
 
-          <button class="page-main__submit" type="submit">Отправить заявку</button>
-          <span class="page-main__required-fields">* - обязательные поля</span>
+          <div class="form-page-main__submit-wrapper">
+            <button class="form-page-main__submit button button_theme_normal" type="submit">Отправить заявку</button>
+            <p class="form-page-main__required-fields">* - обязательные поля</p>
+          </div>
         </form>
       </section>
 
-      <section class="location">
+      <section class="location location__grey-header">
         <div class="location__wrapper">
           <h2 class="location__title">Приглашаем к сотрудничеству дилеров!</h2>
           <p class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-          <div class="location__map"></div>
         </div>
+        <div class="location__map"></div>
       </section>
     </main>
 
