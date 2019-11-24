@@ -24,3 +24,18 @@
   padding-top: 32px;
   margin-bottom: 22px;
 }
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    width: 768px;
+
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__wrapper {
+    width: 1240px;
+  }
+}

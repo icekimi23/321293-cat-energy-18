@@ -3,6 +3,9 @@
 }
 
 .programs__wrapper {
+  width: 320px;
+
+  margin: 0 auto;
   padding: 0 20px;
 }
 
@@ -41,4 +44,39 @@
   color: black;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+@media (min-width: @tablet-width) {
+  .programs__wrapper {
+    width: 708px;
+  }
+
+  .programs__item-description {
+    max-width: 370px;
+
+    border: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .programs__wrapper {
+    width: 1240px;
+  }
+
+  .programs__list {
+    display: flex;
+  }
+
+  .programs__item {
+    width: 570px;
+  }
+
+  .programs__item + .programs__item {
+    margin-top: 0;
+    margin-left: 80px;
+  }
+
+  .programs__item-description {
+    width: auto;
+  }
 }
