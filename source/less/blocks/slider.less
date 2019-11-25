@@ -6,8 +6,22 @@
   .list-reset();
 
   overflow: hidden;
+  height: 240px;
 }
 
 .slider__toggle-text {
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .slider__list {
+    .list-reset();
+
+    height: 517px;
+    overflow: hidden;
+  }
+
+  .slider__image {
+    width: 690px;
+  }
 }

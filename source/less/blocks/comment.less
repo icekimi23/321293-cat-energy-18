@@ -9,5 +9,23 @@
 }
 
 .comment__wrapper {
+  width: 320px;
+  margin: 0 auto 20px;
+
   padding: 0 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .comment__wrapper {
+    width: 768px;
+
+    padding: 0 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .comment__wrapper {
+    width: 1200px;
+    padding: 0 10px;
+  }
 }

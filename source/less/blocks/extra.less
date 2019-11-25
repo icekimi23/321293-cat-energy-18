@@ -3,13 +3,42 @@
 }
 
 .extra__wrapper {
-  padding: 0 20px;
+  width: 320px;
+  margin: 0 auto 30px;
 
-  margin-bottom: 30px;
+  padding: 0 20px;
 }
 
 .extra__title {
   margin-bottom: 30px;
 
   font-size: 24px;
+}
+
+@media (min-width: @tablet-width) {
+  .extra__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 768px;
+
+    padding: 0 70px;
+  }
+
+  .extra__title {
+    width: 100%;
+  }
+  .extra__field {
+    width: 50%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .extra__wrapper {
+    width: 1200px;
+    padding: 0 10px;
+  }
+
+  .extra__field {
+    width: 25%;
+  }
 }
