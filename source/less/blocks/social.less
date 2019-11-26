@@ -16,7 +16,7 @@
 .social__item {
   .social__link {
     width: 22px;
-    height: 20px;
+    min-height: 20px;
     display: inline-block;
 
     background-repeat: no-repeat;
@@ -33,4 +33,14 @@
   &_type_facebook .social__link {
     background-image: url("../../img/icon-fb.svg");
   }
+}
+
+@media (min-width: @tablet-width) {
+  .social {
+    border: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
 }

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header_page_index">
       <div class="page-header__wrapper">
         <a class="page-header__logo">
           <img class="page-header__logo-image" src="/img/logo-mobile.svg" height="40px" alt="Логотип Cat Energy">
@@ -15,7 +15,17 @@
         <nav class="page-header__main-nav main-nav">
           <button class="main-nav__toggle" type="button"></button>
           <div class="main-nav__wrapper">
-            <!-- место под навигацию -->
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a>Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="/catalog.html">Каталог продукции</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="/form.html">Подбор программы</a>
+              </li>
+            </ul>
           </div>
         </nav>
       </div>
@@ -26,7 +36,7 @@
         <div class="intro__wrapper">
           <h1 class="intro__title">Функциональное питание для котов</h1>
           <p class="intro__subtitle">Занялся собой? Займись котом!</p>
-          <img class="intro__image" src="/img/index-can-mobile@1x.png" alt="Корм Cat Energy с курицей">
+          <div class="intro__image"></div>
           <a href="/catalog" class="button button_theme_normal intro__catalog-button"> Подобрать программу </a>
         </div>
       </section>
@@ -115,7 +125,9 @@
           <h2 class="location__title">Приглашаем к сотрудничеству дилеров!</h2>
           <p class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
-        <div class="location__map"></div>
+        <div class="location__map">
+          <img class="location__pin" src="/img/map-pin.png" width="55px" alt="Иконка на карте" />
+        </div>
       </section>
     </main>
 

@@ -4,6 +4,9 @@
 }
 
 .explanation__wrapper {
+  width: 320px;
+  margin: 0 auto;
+
   padding: 0 20px;
 }
 
@@ -18,9 +21,149 @@
 }
 
 .explanation__item {
-  .small-description-text()
+  .small-description-text();
+
+  display: flex;
+
+  &::before {
+    content: "";
+
+    flex: none;
+
+    width: 80px;
+    min-height: 80px;
+
+    background-color: @bg-green;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: "";
+  }
+
+  &_step_1 {
+    &::before {
+      background-image: url("../../img/advantage-leaf@1x.png");
+    }
+  }
+
+  &_step_2 {
+    margin-top: 20px;
+
+    &::before {
+      background-image: url("../../img/advantage-powder@1x.png");
+    }
+  }
+
+  &_step_3 {
+    margin-top: 20px;
+
+    &::before {
+      background-image: url("../../img/advantage-dining@1x.png");
+    }
+  }
+
+  &_step_4 {
+    margin-top: 20px;
+
+    &::before {
+      background-image: url("../../img/advantage-clock@1x.png");
+    }
+  }
 }
 
-.explanation__item + .explanation__item {
-  margin-top: 20px;
+.explanation__description {
+  margin-left: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .explanation__wrapper {
+    width: 708px;
+  }
+
+  .explanation__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .explanation__item {
+    position: relative;
+    flex-direction: column;
+
+    width: 244px;
+    min-height: 228px;
+
+    &::after {
+      position: absolute;
+      right: 0;
+
+      z-index: -1;
+
+      font-family: "Oswaldregular";
+      font-size: 281px;
+      line-height: 214px;
+      color: @bg-grey;
+    }
+
+    &_step_1 {
+      &::after {
+        content: '1';
+      }
+    }
+
+    &_step_2 {
+      margin-top: 0;
+      margin-left: 130px;
+
+      &::after {
+        content: '2';
+      }
+    }
+
+    &_step_3 {
+      margin-top: 80px;
+
+      &::after {
+        content: '3';
+      }
+    }
+
+    &_step_4 {
+      margin-top: 80px;
+      margin-left: 130px;
+
+      &::after {
+        content: '4';
+      }
+    }
+  }
+
+  .explanation__description {
+    margin-left: 0;
+
+    margin-top: 36px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .explanation__wrapper {
+    width: 1240px;
+  }
+
+  .explanation__item {
+    &_step_2 {
+      margin-left: 72px;
+    }
+
+    &_step_3 {
+      margin-top: 0;
+      margin-left: 72px;
+    }
+
+    &_step_4 {
+      margin-top: 0;
+      margin-left: 72px;
+    }
+  }
 }

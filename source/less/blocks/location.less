@@ -1,4 +1,6 @@
 .location {
+  position: relative;
+
   &__grey-header {
     .location__wrapper {
       background: @bg-grey;
@@ -35,6 +37,62 @@
 }
 
 .location__map {
-  height: 400px;
+  position: relative;
+  margin: 0 auto;
+
+  width: 320px;
+  min-height: 400px;
   background: url("../../img/bg-map-mobile@1x.png") no-repeat 50% 0;
+}
+
+.location__pin {
+  position: absolute;
+
+  top: 182px;
+  left: 136px;
+
+  width: 55px;
+  min-height: 53px;
+}
+
+@media (min-width: @tablet-width) {
+  .location__wrapper {
+    width: 708px;
+    justify-content: space-between;
+  }
+
+  .location__map {
+    width: 767px;
+    background: url("../../img/bg-map-tablet@1x.png") no-repeat 50% 0;
+  }
+
+  .location__pin {
+    top: 150px;
+    left: 333px;
+
+    width: 113px;
+    min-height: 106px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .location__wrapper {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+
+    width: 570px;
+    min-height: 200px;
+
+    background: white;
+  }
+
+  .location__map {
+    width: 1440px;
+    background: url("../../img/bg-map-desktop@1x.png") no-repeat 50% 0;
+  }
+
+  .location__pin {
+    left: 1009px;
+  }
 }

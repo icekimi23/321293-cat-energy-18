@@ -1,6 +1,39 @@
+.main-nav__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .main-nav__toggle {
   width: 24px;
-  height: 24px;
+  min-height: 24px;
   border: none;
   background: url("../../img/icon-mobile-menu.svg") no-repeat;
+}
+
+.main-nav__list {
+  .list-reset();
+
+  min-height: 195px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__list {
+    display: flex;
+
+    min-height: 65px;
+    width: 440px;
+
+    justify-content: space-around;
+  }
+
+  .main-nav__wrapper {
+    width: auto;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__list {
+    width: 580px;
+  }
 }

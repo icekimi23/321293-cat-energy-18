@@ -1,29 +1,111 @@
 .intro {
-  padding-bottom: 188px;
-  margin-bottom: 12px;
-
-  color: white;
-  text-align: center;
+  margin-bottom: 22px;
+  background: url("../../img/index-background-mobile@1x.jpg") 50% 0 no-repeat,
+  linear-gradient(to bottom, #63a837 63%, white 37%);
 }
 
 .intro__wrapper {
-  padding: 0 20px;
-  height: 305px;
-  background: url("../../img/index-background-mobile@1x.jpg") #63a837 center no-repeat;
+  width: 320px;
+  min-height: 485px;
+
+  margin: 0 auto;
+  padding: 28px 20px 0;
 }
 
 .intro__title {
-  padding: 30px 0 18px;
-
+  margin-bottom: 18px;
   font-size: 36px;
   line-height: 1;
+  color: white;
+
+  text-align: center;
 }
 
 .intro__subtitle {
+  margin-bottom: 30px;
+
   font-size: 14px;
+  color: white;
   text-transform: uppercase;
+
+  text-align: center;
 }
 
 .intro__image {
-  margin-top: 30px;
+  width: 280px;
+  height: 270px;
+
+  background: url("../../img/index-can-mobile@1x.png") 50% 0 no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .intro {
+    background: none;
+  }
+
+  .intro__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    width: 710px;
+    padding: 0 29px;
+  }
+
+  .intro__title,
+  .intro__subtitle {
+    color: #000000;
+    text-align: left;
+    margin-left: 90px;
+  }
+
+  .intro__title {
+    width: 415px;
+    margin-bottom: 32px;
+
+    font-size: 60px;
+  }
+
+  .intro__subtitle {
+    margin-bottom: 48px;
+
+    font-size: 20px;
+  }
+
+  .intro__image {
+    width: 709px;
+    height: 609px;
+
+    order: 1;
+
+    margin-top: -80px;
+
+    z-index: -1;
+
+    background: url("../../img/index-can-tablet@1x.jpg") 50% 0 no-repeat;
+  }
+
+  .intro__catalog-button {
+    width: 245px;
+    margin-left: 90px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .intro__wrapper {
+    position: relative;
+    width: 1120px;
+  }
+
+  .intro__title,
+  .intro__subtitle,
+  .intro__catalog-button {
+    margin-left: 0;
+  }
+
+  .intro__image {
+    position: absolute;
+    left: 40%;
+
+    background: url("../../img/index-can-desktop@1x.png") 50% 0 no-repeat;
+  }
 }
