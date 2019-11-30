@@ -81,34 +81,44 @@
 
       <section class="example">
         <div class="example__wrapper">
-          <h2 class="example__title"> Живой пример </h2>
-          <p class="example__description"> Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-          <div class="example__stat-wrapper">
-            <div class="example__stat">
-              <div class="example__stat-value">
-                5 кг
+          <div class="example__data-wrapper">
+            <h2 class="example__title"> Живой пример </h2>
+            <p class="example__description"> Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+            <div class="example__stat-wrapper">
+              <div class="example__stat">
+                <div class="example__stat-value">
+                  5 кг
+                </div>
+                <div class="example__stat-category">
+                  снижение веса
+                </div>
               </div>
-              <div class="example__stat-category">
-                снижение веса
+              <div class="example__stat">
+                <div class="example__stat-value">
+                  60 дней
+                </div>
+                <div class="example__stat-category">
+                  затрачено времени
+                </div>
               </div>
-            </div>
-            <div class="example__stat">
-              <div class="example__stat-value">
-                60 дней
-              </div>
-              <div class="example__stat-category">
-                затрачено времени
-              </div>
+              <p class="example__cost">Затраты на питание: 15000 руб.</p>
             </div>
           </div>
-          <p class="example__cost">Затраты на питание: 15000 руб.</p>
           <div class="example__slider slider">
             <ul class="example__slider-list slider__list">
               <li class="slider__item">
-                <img class="slider__image" src="/img/before-mobile@1x.png" height="240px" alt="Пухленький котик">
+                <picture>
+                  <source srcset="/img/before-tablet@1x.png" media="(min-width: 768px)">
+                  <source srcset="/img/before-desktop@1x.png" media="(min-width: 1200px)">
+                  <img class="slider__image" src="/img/before-mobile@1x.png" width="320px" alt="Пухленький котик">
+                </picture>
               </li>
               <li class="slider__item">
-                <img class="slider__image" src="/img/after-mobile@1x.png" height="240px" alt="Подтянутый котик">
+                <picture>
+                  <source srcset="/img/after-tablet@1x.png" media="(min-width: 768px)">
+                  <source srcset="/img/after-desktop@1x.png" media="(min-width: 1200px)">
+                  <img class="slider__image" src="/img/after-mobile@1x.png" width="320px" alt="Подтянутый котик">
+                </picture>
               </li>
             </ul>
             <div class="slider__toggle">

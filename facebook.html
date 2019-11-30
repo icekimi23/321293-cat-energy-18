@@ -1,0 +1,75 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    .page__header {
+      background: blue;
+
+      height: 100px;
+
+      display: flex;
+      align-items: center;
+    }
+
+    .page__header-wrapper,
+    .page__body-wrapper,
+    .page__footer-wrapper {
+      width: 1024px;
+      margin: 0 auto;
+    }
+
+    .page__header-wrapper {
+      justify-content: space-between;
+    }
+
+    .page__header-logo {
+      font-size: 36px;
+      color: white;
+    }
+
+    .page__header-login {
+
+    }
+
+    .page__body-title {
+      font-size: 36px;
+    }
+
+    .page__body-subtitle {
+      font-size: 26px;
+      color: grey;
+      opacity: 0.8;
+    }
+
+  </style>
+</head>
+<body class="page">
+<header class="page__header">
+  <div class="page__header-wrapper">
+    <a class="page__header-logo">facebook</a>
+    <button class="page__header-login">Войти в существующий аккаунт</button>
+  </div>
+</header>
+<div class="page__body">
+  <div class="page__body-wrapper">
+    <p class="page__body-title">Создать аккаунт</p>
+    <p class="page__body-subtitle">Быстро легко</p>
+    <div>
+      <input type="text" placeholder="Имя">
+      <input type="text" placeholder="Фамилия">
+    </div>
+    <div>
+      <input type="text" placeholder="Номер мобильного телефона">
+    </div>
+    <div>
+      <input type="text" placeholder="Новый пароль">
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="page__footer-wrapper">
+  </div>
+</footer>
+>
+</body>
+</html>
