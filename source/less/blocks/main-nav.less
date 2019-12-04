@@ -1,39 +1,164 @@
+.main-nav {
+  position: relative;
+
+  width: 320px;
+  margin: 0 auto;
+
+  &_opened {
+    .main-nav__toggle {
+      background: url("../../img/icon-close.svg") no-repeat center;
+    }
+
+    .main-nav__item {
+      display: block;
+    }
+  }
+
+  &_nojs {
+    .main-nav__toggle {
+      display: none;
+    }
+
+    .main-nav__item {
+      display: block;
+    }
+  }
+}
+
 .main-nav__wrapper {
   width: 320px;
   margin: 0 auto;
 }
 
 .main-nav__toggle {
-  width: 24px;
-  min-height: 24px;
+  position: absolute;
+  top: -48px;
+  right: 20px;
+
+  width: 25px;
+  min-height: 19px;
+
   border: none;
-  background: url("../../img/icon-mobile-menu.svg") no-repeat;
+  background: url("../../img/icon-mobile-menu.svg") no-repeat center;
+
+  cursor: pointer;
 }
 
 .main-nav__list {
   .list-reset();
+}
 
-  min-height: 195px;
+.main-nav__item {
+  display: none;
+
+  border-bottom: 1px solid @color-grey-2;
+}
+
+.main-nav__link {
+  display: block;
+  padding: 24px;
+
+  color: black;
+  font-size: 20px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+
+  text-decoration: none;
+
+  &:hover {
+    color: @color-black-hover;
+  }
+
+  &:active {
+    color: @color-black-active;
+  }
 }
 
 @media (min-width: @tablet-width) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+  }
+
   .main-nav__list {
     display: flex;
+    width: 444px;
 
-    min-height: 65px;
-    width: 440px;
+    justify-content: flex-end;
+  }
 
-    justify-content: space-around;
+  .main-nav__item + .main-nav__item {
+    margin-left: 36px;
   }
 
   .main-nav__wrapper {
     width: auto;
     margin: 0;
   }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__link {
+    padding: 12px 0;
+
+    font-size: 18px;
+  }
+
+  .main-nav__item {
+    position: relative;
+    display: block;
+
+    border-bottom: none;
+
+    &_active {
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        height: 2px;
+        background: @bg-green;
+      }
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .main-nav {
+    &_theme_white {
+      .main-nav__link {
+        color: white;
+
+        &:hover {
+          color: @color-white-hover;
+        }
+
+        &:active {
+          color: @color-white-active;
+        }
+      }
+
+      .main-nav__item {
+        &_active {
+          &::after {
+            background: white;
+          }
+        }
+      }
+    }
+  }
+
   .main-nav__list {
     width: 580px;
+  }
+
+  .main-nav__link {
+    font-size: 20px;
   }
 }
