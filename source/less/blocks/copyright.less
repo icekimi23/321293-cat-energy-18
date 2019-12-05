@@ -8,10 +8,24 @@
   font-size: 16px;
 
   color: @color-grey;
+  text-decoration: none;
+}
+
+.copyright__link {
+  height: 34px;
+  margin-left: auto;
 }
 
 .copyright__image {
+  width: 27px;
+  height: 34px;
   margin-left: auto;
 
   filter: grayscale(1);
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__text {
+    margin-right: 24px;
+  }
 }

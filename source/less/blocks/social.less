@@ -1,5 +1,4 @@
 .social {
-  padding: 24px 0;
   border-top: 1px solid @bg-border-light-grey;
   border-bottom: 1px solid @bg-border-light-grey;
 }
@@ -10,27 +9,36 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 280px;
+  width: 128px;
+
+  margin: 0 auto;
 }
 
 .social__item {
   .social__link {
-    width: 22px;
-    min-height: 20px;
     display: inline-block;
 
     background-repeat: no-repeat;
   }
 
   &_type_vk .social__link {
+    position: relative;
+    top: -2px;
+
+    width: 22px;
+    min-height: 12px;
     background-image: url("../../img/icon-vk.svg");
   }
 
   &_type_instagram .social__link {
+    width: 17px;
+    min-height: 17px;
     background-image: url("../../img/icon-insta.svg");
   }
 
   &_type_facebook .social__link {
+    width: 10px;
+    min-height: 19px;
     background-image: url("../../img/icon-fb.svg");
   }
 }

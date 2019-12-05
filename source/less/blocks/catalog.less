@@ -8,10 +8,11 @@
 }
 
 .catalog__item {
-  border-top: 1px solid @bg-border-light-grey-2;
+  border: 1px solid @bg-border-light-grey-2;
+  margin-top: -1px;
 
-  &:last-child {
-    border-bottom: 1px solid @bg-border-light-grey-2;
+  &:first-child {
+    margin-top: 0;
   }
 }
 
@@ -30,37 +31,22 @@
 }
 
 .catalog__title {
-  margin-top: 30px;
   margin-bottom: 34px;
+  padding: 0 20px;
 
   font-size: 36px;
+  line-height: 1;
 
-  text-align: center;
+  text-align: left;
 }
 
 .catalog__name {
   max-width: 72px;
   margin-bottom: 18px;
 
+  line-height: 1.25;
   text-transform: uppercase;
 }
-
-.catalog__image {
-  width: 140px;
-  min-height: 144px;
-
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-
-  &_type_chicken-small {
-    background-image: url("../../img/chicken-small-mobile@1x.jpg");
-  }
-
-  &_type_chicken-big {
-    background-image: url("../../img/chicken-big-mobile@1x.jpg");
-  }
-}
-
 
 .catalog__characteristics {
   display: flex;
@@ -122,18 +108,28 @@
   margin-bottom: 22px;
 }
 
+.catalog__order {
+  font-size: 16px;
+}
+
+.catalog__show-all {
+  font-size: 16px;
+}
+
 @media (min-width: @tablet-width) {
   .catalog__wrapper {
     width: 708px;
   }
 
   .catalog__outer-item-wrapper {
-    padding-left: 38px;
-    padding-right: 38px;
+    padding: 0 38px 40px;
   }
 
   .catalog__title {
     margin-bottom: 156px;
+    padding: 0;
+
+    font-size: 60px;
   }
 
   .catalog__list {
@@ -155,6 +151,16 @@
     margin-right: 0;
   }
 
+  .catalog__name {
+    align-self: center;
+
+    max-width: 128px;
+    margin-bottom: 28px;
+
+    font-size: 20px;
+    text-align: center;
+  }
+
   .catalog__outer-item-wrapper {
     background: @bg-grey;
   }
@@ -164,25 +170,68 @@
     flex-direction: column;
   }
 
-  .catalog__image {
-    width: 195px;
-    min-height: 208px;
-
-    margin-top: -55px;
-    margin-bottom: 40px;
-
-    &_type_chicken-small {
-      background-image: url("../../img/chicken-small-tablet@1x.png");
-    }
-
-    &_type_chicken-big {
-      background-image: url("../../img/chicken-big-tablet@1x.png");
-    }
-  }
-
   .catalog__characteristics {
     width: 100%;
     margin-bottom: 32px;
+  }
+
+  .catalog__characteristic {
+    font-size: 16px;
+    line-height: 1.69;
+
+    border-bottom: 1px solid @color-grey-3;
+  }
+
+  .catalog__image {
+    &_size_small {
+      width: auto;
+      height: 172px;
+
+      margin-top: -50px;
+      margin-bottom: 40px;
+    }
+
+    &_size_big {
+      width: auto;
+      height: 208px;
+
+      margin-top: -85px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .catalog__more {
+    padding: 59px 38px 40px;
+
+    border: 1px solid @bg-border-pinkish-grey;
+  }
+
+  .catalog__show-more {
+    width: 61px;
+    min-height: 61px;
+
+    margin-bottom: 50px;
+
+    background: url("../../img/icon-plus.svg");
+  }
+
+  .catalog__more-info-title {
+    max-width: 160px;
+    margin-bottom: 28px;
+
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
+  }
+
+  .catalog__more-info-subtitle {
+    max-width: 160px;
+    margin-bottom: 85px;
+
+    font-size: 16px;
+    line-height: 1.25;
+
+    text-align: center;
   }
 }
 
