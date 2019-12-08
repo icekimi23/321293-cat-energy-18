@@ -49,7 +49,10 @@
 }
 
 .additional-goods__order-all {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   min-height: 289px;
 
   margin-bottom: 10px;
@@ -57,14 +60,17 @@
   background: url("../../img/gift-photo-mobile@1x.jpg") no-repeat 50% 0;
 }
 
+.additional-goods__order-all-icon {
+  width: 56px;
+
+  margin-top: 65px;
+  fill: white;
+}
+
 .additional-goods__order-all-text {
-  position: absolute;
   width: 176px;
 
-  bottom: 44px;
-
-  left: 50%;
-  transform: translateX(-50%);
+  margin-top: 65px;
 
   font-family: "Arial";
   font-size: 16px;
@@ -76,6 +82,7 @@
 @media (min-width: @tablet-width) {
   .additional-goods__wrapper {
     width: 708px;
+    padding: 0;
   }
 
   .additional-goods__name-price-wrapper {
@@ -102,18 +109,27 @@
   }
 
   .additional-goods__order-all {
-    height: 200px;
+    flex-direction: row;
+    min-height: 200px;
     background: url("../../img/gift-photo-tablet@1x.jpg") no-repeat 50% 0;
   }
 
+  .additional-goods__order-all-icon {
+    margin-top: 0;
+    margin-left: 90px;
+  }
+
   .additional-goods__order-all-text {
-    top: 50%;
-    left: 70%;
-    transform: translate(-50%, -50%);
+    margin-top: 0;
+    margin-left: 277px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .additional-goods {
+    margin-bottom: 86px;
+  }
+
   .additional-goods__wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -124,14 +140,15 @@
     flex-grow: 1;
 
     margin-right: 80px;
+    margin-bottom: 0;
   }
 
   .additional-goods__item {
     display: flex;
     align-items: baseline;
 
-    padding-top: 11px;
-    padding-bottom: 11px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 
     border-left: none;
     border-right: none;
@@ -155,20 +172,21 @@
   }
 
   .additional-goods__order-all {
-    position: relative;
+    flex-direction: column;
     width: 245px;
-    height: 289px;
+    min-height: 289px;
+    margin-bottom: 0;
 
     background: url("../../img/gift-photo-mobile@1x.jpg") no-repeat 50% 0;
   }
 
+  .additional-goods__order-all-icon {
+    margin-top: 65px;
+    margin-left: 0;
+  }
+
   .additional-goods__order-all-text {
-    position: absolute;
-    width: 176px;
-
-    bottom: 44px;
-
-    left: 50%;
-    transform: translateX(-50%);
+    margin-top: 65px;
+    margin-left: 0;
   }
 }

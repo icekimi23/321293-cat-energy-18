@@ -2,7 +2,32 @@
 
 }
 
+.textarea__wrapper {
+  min-height: 150px;
+  padding: 16px;
+  border: solid 1px @bg-border-pinkish-grey;
+}
+
 .textarea__control {
   width: 100%;
-  border: solid 1px @bg-border-pinkish-grey;
+  border: none;
+  outline: 0;
+
+  font-family: "Oswaldregular";
+  font-size: 16px;
+}
+
+@media (min-width: @tablet-width) {
+  .textarea__wrapper {
+    min-height: 174px;
+    padding: 20px;
+  }
+
+  .textarea__control {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
 }
