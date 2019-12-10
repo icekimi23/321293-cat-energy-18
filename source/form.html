@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/index.js" defer></script>
   </head>
@@ -43,7 +44,7 @@
           <p class="form-page-main__subtitle"><span class="form-page-main__subtitle-inner">Заполните анкету и мы подберём программу питания для вашего кота</span></p>
 
           <div class="form-page-main__wrapper">
-            <fieldset class="main-info">
+            <fieldset class="main-info form-page-main__fieldset">
               <div class="main-info__wrapper">
                 <div class="main-info__field input input_type_string input_required">
                   <label for="name" class="input__label">ИМЯ:</label>
@@ -60,7 +61,7 @@
               </div>
             </fieldset>
 
-            <fieldset class="program-type">
+            <fieldset class="program-type form-page-main__fieldset">
               <div class="program-type__wrapper">
                 <div class="program-type__radio radio">
                   <div class="radio__toggle">
@@ -83,9 +84,9 @@
             </fieldset>
           </div>
 
-          <fieldset class="contact-data">
+          <fieldset class="contact-data form-page-main__fieldset form-page-main__fieldset_line">
             <div class="contact-data__wrapper">
-              <legend class="contact-data__title">Контактные данные (владельца кота)</legend>
+              <legend class="contact-data__title form-page-main__fieldset-title">Контактные данные (владельца кота)</legend>
               <div class="contact-data__field input input_type_email input_required input_has-icon">
                 <label for="email" class="input__label">E-MAIL:</label>
                 <input id="email" name="email" class="input__control" type="text" value="test@mail.ru">
@@ -108,33 +109,35 @@
             </div>
           </fieldset>
 
-          <fieldset class="comment">
+          <fieldset class="comment form-page-main__fieldset form-page-main__fieldset_line">
             <div class="comment__wrapper">
-              <legend class="comment__title">Комментарий</legend>
+              <legend class="comment__title form-page-main__fieldset-title">Комментарий</legend>
               <div class="contact-data__field textarea">
                 <textarea name="comment" class="textarea__control" type="text" placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"></textarea>
               </div>
             </div>
           </fieldset>
 
-          <fieldset class="extra">
+          <fieldset class="extra form-page-main__fieldset form-page-main__fieldset_line">
             <div class="extra__wrapper">
-              <legend class="extra__title">Дополнительно</legend>
-              <div class="extra__field checkbox">
-                <input id="sugar" name="sugar" class="checkbox__control" type="checkbox">
-                <label for="sugar" class="checkbox__label">Сахарозаменитель</label>
-              </div>
-              <div class="extra__field checkbox">
-                <input id="water" name="water" class="checkbox__control" type="checkbox">
-                <label for="water" class="checkbox__label">Питьевая вода</label>
-              </div>
-              <div class="extra__field checkbox">
-                <input id="milk" name="milk" class="checkbox__control" type="checkbox">
-                <label for="milk" class="checkbox__label">Молоко</label>
-              </div>
-              <div class="extra__field checkbox">
-                <input id="vitamins" name="vitamins" class="checkbox__control" type="checkbox">
-                <label for="vitamins" class="checkbox__label">Витамины</label>
+              <legend class="extra__title form-page-main__fieldset-title">Дополнительно</legend>
+              <div class="extra__checkbox-container">
+                <div class="extra__field checkbox">
+                  <input id="sugar" name="sugar" class="checkbox__control" type="checkbox">
+                  <label for="sugar" class="checkbox__label">Сахарозаменитель</label>
+                </div>
+                <div class="extra__field checkbox">
+                  <input id="water" name="water" class="checkbox__control" type="checkbox">
+                  <label for="water" class="checkbox__label">Питьевая вода</label>
+                </div>
+                <div class="extra__field checkbox">
+                  <input id="milk" name="milk" class="checkbox__control" type="checkbox">
+                  <label for="milk" class="checkbox__label">Молоко</label>
+                </div>
+                <div class="extra__field checkbox">
+                  <input id="vitamins" name="vitamins" class="checkbox__control" type="checkbox">
+                  <label for="vitamins" class="checkbox__label">Витамины</label>
+                </div>
               </div>
             </div>
           </fieldset>

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/index.js" defer></script>
   </head>
@@ -243,52 +244,53 @@
         </div>
       </section>
 
-      <section class="additional-goods">
+      <section class="additional-goods additional-goods_line">
         <div class="additional-goods__wrapper">
           <h2 class="additional-goods__title">Дополнительные товары</h2>
-          <ul class="additional-goods__list">
-            <li class="additional-goods__item">
-              <div class="additional-goods__name-price-wrapper">
-                <p class="additional-goods__name">Сахарозаменитель</p>
-                <div class="additional-goods__price-wrapper">
-                  <span class="additional-goods__quantity">1 упаковка (100 г)</span>
-                  <span class="additional-goods__price">200 р.</span>
+          <div class="additional-goods__list-container">
+            <ul class="additional-goods__list">
+              <li class="additional-goods__item">
+                <div class="additional-goods__name-price-wrapper">
+                  <p class="additional-goods__name">Сахарозаменитель</p>
+                  <div class="additional-goods__price-wrapper">
+                    <span class="additional-goods__quantity">1 упаковка (100 г)</span>
+                    <span class="additional-goods__price">200 р.</span>
+                  </div>
                 </div>
-              </div>
-              <a href="/order/1" class="button button_theme_normal additional-goods__order"><span class="button__text">Заказать</span></a>
-            </li>
-            <li class="additional-goods__item">
-              <div class="additional-goods__name-price-wrapper">
-                <p class="additional-goods__name">Питьевая вода</p>
-                <div class="additional-goods__price-wrapper">
-                  <span class="additional-goods__quantity">5 литров</span>
-                  <span class="additional-goods__price">50 р.</span>
+                <a href="/order/1" class="button button_theme_normal additional-goods__order"><span class="button__text">Заказать</span></a>
+              </li>
+              <li class="additional-goods__item">
+                <div class="additional-goods__name-price-wrapper">
+                  <p class="additional-goods__name">Питьевая вода</p>
+                  <div class="additional-goods__price-wrapper">
+                    <span class="additional-goods__quantity">5 литров</span>
+                    <span class="additional-goods__price">50 р.</span>
+                  </div>
                 </div>
-              </div>
-              <a href="/order/1" class="button button_theme_normal additional-goods__order"><span class="button__text">Заказать</span></a>
-            </li>
-            <li class="additional-goods__item">
-              <div class="additional-goods__name-price-wrapper">
-                <p class="additional-goods__name">Молоко</p>
-                <div class="additional-goods__price-wrapper">
-                  <span class="additional-goods__quantity">1 литр</span>
-                  <span class="additional-goods__price">100 р.</span>
+                <a href="/order/1" class="button button_theme_normal additional-goods__order"><span class="button__text">Заказать</span></a>
+              </li>
+              <li class="additional-goods__item">
+                <div class="additional-goods__name-price-wrapper">
+                  <p class="additional-goods__name">Молоко</p>
+                  <div class="additional-goods__price-wrapper">
+                    <span class="additional-goods__quantity">1 литр</span>
+                    <span class="additional-goods__price">100 р.</span>
+                  </div>
                 </div>
-              </div>
-              <a href="/order/1" class="button button_theme_normal additional-goods__order"><span class="button__text">Заказать</span></a>
-            </li>
-            <li class="additional-goods__item">
-              <div class="additional-goods__name-price-wrapper">
-                <p class="additional-goods__name">Витамины</p>
-                <div class="additional-goods__price-wrapper">
-                  <span class="additional-goods__quantity">1 упаковка (30 г)</span>
-                  <span class="additional-goods__price">300 р.</span>
+                <a href="/order/1" class="button button_theme_normal additional-goods__order"><span class="button__text">Заказать</span></a>
+              </li>
+              <li class="additional-goods__item">
+                <div class="additional-goods__name-price-wrapper">
+                  <p class="additional-goods__name">Витамины</p>
+                  <div class="additional-goods__price-wrapper">
+                    <span class="additional-goods__quantity">1 упаковка (30 г)</span>
+                    <span class="additional-goods__price">300 р.</span>
+                  </div>
                 </div>
-              </div>
-              <a href="/order/1" class="button button_theme_normal additional-goods__order"><span class="button__text">Заказать</span></a>
-            </li>
-          </ul>
-          <div class="additional-goods__order-all">
+                <a href="/order/1" class="button button_theme_normal additional-goods__order"><span class="button__text">Заказать</span></a>
+              </li>
+            </ul>
+            <div class="additional-goods__order-all">
               <svg class="additional-goods__order-all-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55.5 60" style="enable-background:new 0 0 55.5 60;" xml:space="preserve">
                 <path
                   d="M52.3,12.2h-7c0.5-0.7,0.8-1.4,1.1-2.2c0.6-2,0.4-4.1-0.6-5.9c-1-1.8-2.6-3.1-4.6-3.7c-2-0.6-4.1-0.4-5.9,0.6
@@ -301,7 +303,8 @@
                 c0,0,0,0,0,0s0,0,0,0H27.7c0,0,0,0,0,0s0,0,0,0H5.2c0,0,0,0,0,0s0,0,0,0h-2c-0.4,0-0.7-0.3-0.7-0.7v-9.4c0-0.4,0.3-0.7,0.7-0.7h49.2
                 c0.4,0,0.7,0.3,0.7,0.7V24.7z"/>
             </svg>
-            <p class="additional-goods__order-all-text">Закажите всё и получите чехол для кота в подарок</p>
+              <p class="additional-goods__order-all-text">Закажите всё и получите чехол для кота в подарок</p>
+            </div>
           </div>
         </div>
       </section>

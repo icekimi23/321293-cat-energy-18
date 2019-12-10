@@ -2,6 +2,31 @@
 
 }
 
+.form-page-main__fieldset {
+  position: relative;
+
+  &_line {
+    &::before {
+      content: '';
+      display: block;
+
+      position: absolute;
+      top: 15px;
+
+      width: 100%;
+      height: 2px;
+      background: @bg-green;
+    }
+  }
+
+  .form-page-main__fieldset-title {
+    position: relative;
+    background: white;
+    padding: 0 20px;
+    margin-left: -20px;
+  }
+}
+
 .form-page-main__wrapper {
   width: 320px;
   margin: 0 auto 20px;
@@ -49,6 +74,16 @@
 }
 
 @media (min-width: @tablet-width) {
+  .form-page-main__fieldset {
+    position: relative;
+
+    &_line {
+      &::before {
+        top: 18px;
+      }
+    }
+  }
+
   .form-page-main__wrapper {
     width: 768px;
     margin: 0 auto 80px;
