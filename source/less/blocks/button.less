@@ -15,12 +15,32 @@
   text-align: center;
 
   &_theme_normal {
-    background: #68b738;
+    background: @bg-green;
     color: white;
+
+    &:hover {
+      background: @bg-grass;
+    }
+
+    &:active {
+      .button__text {
+        opacity: 0.3;
+      }
+    }
   }
 
   &_theme_pale {
     background: @bg-grey;
     color: @color-dark-grey;
+
+    &:hover {
+      background: @color-grey-4;
+    }
+
+    &:active {
+      .button__text {
+        opacity: 0.3;
+      }
+    }
   }
 }

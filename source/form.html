@@ -112,9 +112,7 @@
             <div class="comment__wrapper">
               <legend class="comment__title">Комментарий</legend>
               <div class="contact-data__field textarea">
-                <div class="textarea__wrapper">
-                  <textarea name="comment" class="textarea__control" type="text" placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"></textarea>
-                </div>
+                <textarea name="comment" class="textarea__control" type="text" placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"></textarea>
               </div>
             </div>
           </fieldset>
@@ -142,18 +140,26 @@
           </fieldset>
 
           <div class="form-page-main__submit-wrapper">
-            <button class="form-page-main__submit button button_theme_normal" type="submit">Отправить заявку</button>
+            <button class="form-page-main__submit button button_theme_normal" type="submit"><span class="button__text">Отправить заявку</span></button>
             <p class="form-page-main__required-fields">* - обязательные поля</p>
           </div>
         </form>
       </section>
 
-      <section class="location location__grey-header">
+      <section class="location location_theme_grey">
         <div class="location__wrapper">
-          <h2 class="location__title">Приглашаем к сотрудничеству дилеров!</h2>
-          <p class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <div class="location__address-pane">
+            <h2 class="location__title">Приглашаем к сотрудничеству дилеров!</h2>
+            <p class="location__address">
+              <span class="location__street">ул. Большая Конюшенная, д. 19/8 </span>
+              <span class="location__city">Санкт-Петербург</span>
+            </p>
+          </div>
         </div>
-        <div class="location__map"></div>
+        <div class="location__map">
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A43fb9cfc560e6a718da44c55ff57837d60420b7b84a0261114fbed509573ed57&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+          <img class="location__pin" src="/img/map-pin.png" width="55px" alt="Иконка на карте" />
+        </div>
       </section>
     </main>
 

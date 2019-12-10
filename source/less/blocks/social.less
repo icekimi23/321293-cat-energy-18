@@ -47,6 +47,23 @@
   .social {
     border: none;
   }
+
+  .social__item {
+    &_type_vk .social__link {
+      width: 30px;
+      min-height: 16px;
+    }
+
+    &_type_instagram .social__link {
+      width: 23px;
+      min-height: 23px;
+    }
+
+    &_type_facebook .social__link {
+      width: 14px;
+      min-height: 28px;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {

@@ -1,7 +1,7 @@
 .location {
   position: relative;
 
-  &__grey-header {
+  &_theme_grey {
     .location__wrapper {
       background: @bg-grey;
     }
@@ -11,7 +11,9 @@
 .location__wrapper {
   width: 320px;
   margin: 0 auto;
+}
 
+.location__address-pane {
   display: flex;
 
   align-items: center;
@@ -40,7 +42,6 @@
   position: relative;
   margin: 0 auto;
 
-  width: 320px;
   min-height: 400px;
   background: url("../../img/bg-map-mobile@1x.png") no-repeat 50% 0;
 }
@@ -49,26 +50,53 @@
   position: absolute;
 
   top: 182px;
-  left: 136px;
+  left: 50%;
+  transform: translateX(-50%);
 
   width: 55px;
   min-height: 53px;
 }
 
+ymaps + .location__pin {
+  display: none;
+}
+
+.location__street,
+.location__city {
+  display: inline-block;
+}
+
 @media (min-width: @tablet-width) {
   .location__wrapper {
-    width: 708px;
+    width: 768px;
+  }
+
+  .location__address-pane {
     justify-content: space-between;
+    padding: 69px 70px 62px;
+  }
+
+  .location__title {
+    font-size: 20px;
+    max-width: 154px;
+  }
+
+  .location__address {
+    max-width: 162px;
+
+    font-size: 16px;
+  }
+
+  .location__city {
+    margin-top: 12px;
   }
 
   .location__map {
-    width: 767px;
     background: url("../../img/bg-map-tablet@1x.png") no-repeat 50% 0;
   }
 
   .location__pin {
-    top: 150px;
-    left: 333px;
+    top: 158px;
 
     width: 113px;
     min-height: 106px;
@@ -77,9 +105,17 @@
 
 @media (min-width: @desktop-width) {
   .location__wrapper {
-    position: absolute;
-    top: 95px;
-    left: 10%;
+    width: 1240px;
+    height: 0;
+    min-height: auto;
+
+    background: white;
+  }
+
+  .location__address-pane {
+    position: relative;
+    top: 110px;
+
     z-index: 1;
 
     width: 570px;
@@ -94,6 +130,6 @@
   }
 
   .location__pin {
-    left: 1009px;
+    left: 78%;
   }
 }

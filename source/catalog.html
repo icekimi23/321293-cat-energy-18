@@ -66,7 +66,7 @@
                     </div>
                   </div>
                 </div>
-                <a href="/catalog/chicken-500" class="button button_theme_normal catalog__order"> Заказать </a>
+                <a href="/catalog/chicken-500" class="button button_theme_normal catalog__order"><span class="button__text">Заказать</span></a>
               </div>
             </li>
             <li class="catalog__item">
@@ -93,7 +93,7 @@
                     </div>
                   </div>
                 </div>
-                <a href="/catalog/chicken-500" class="button button_theme_normal catalog__order"> Заказать </a>
+                <a href="/catalog/chicken-500" class="button button_theme_normal catalog__order"><span class="button__text">Заказать</span></a>
               </div>
             </li>
             <li class="catalog__item">
@@ -120,7 +120,7 @@
                     </div>
                   </div>
                 </div>
-                <a href="/catalog/chicken-500" class="button button_theme_normal catalog__order"> Заказать </a>
+                <a href="/catalog/chicken-500" class="button button_theme_normal catalog__order"><span class="button__text">Заказать</span></a>
               </div>
             </li>
             <li class="catalog__item">
@@ -147,7 +147,7 @@
                     </div>
                   </div>
                 </div>
-                <a href="/catalog/chicken-500" class="button button_theme_normal catalog__order"> Заказать </a>
+                <a href="/catalog/chicken-500" class="button button_theme_normal catalog__order"><span class="button__text">Заказать</span></a>
               </div>
             </li>
             <li class="catalog__item">
@@ -174,7 +174,7 @@
                     </div>
                   </div>
                 </div>
-                <a href="/catalog/chicken-500" class="button button_theme_normal catalog__order"> Заказать </a>
+                <a href="/catalog/chicken-500" class="button button_theme_normal catalog__order"><span class="button__text">Заказать</span></a>
               </div>
             </li>
             <li class="catalog__item">
@@ -201,7 +201,7 @@
                     </div>
                   </div>
                 </div>
-                <a href="/catalog/chicken-500" class="button button_theme_normal catalog__order"> Заказать </a>
+                <a href="/catalog/chicken-500" class="button button_theme_normal catalog__order"><span class="button__text">Заказать</span></a>
               </div>
             </li>
             <li class="catalog__item">
@@ -228,7 +228,7 @@
                     </div>
                   </div>
                 </div>
-                <a href="/catalog/chicken-500" class="button button_theme_normal catalog__order"> Заказать </a>
+                <a href="/catalog/chicken-500" class="button button_theme_normal catalog__order"><span class="button__text">Заказать</span></a>
               </div>
             </li>
             <li class="catalog__item">
@@ -236,7 +236,7 @@
                 <button class="catalog__show-more" type="button"></button>
                 <p class="catalog__more-info-title">Показать ещё 100500 товаров</p>
                 <p class="catalog__more-info-subtitle">На самом деле вкусов гораздо больше!</p>
-                <a href="/catalog/all" class="button button_theme_pale catalog__show-all"> Показать все </a>
+                <a href="/catalog/all" class="button button_theme_pale catalog__show-all"><span class="button__text">Показать все</span></a>
               </div>
             </li>
           </ul>
@@ -255,7 +255,7 @@
                   <span class="additional-goods__price">200 р.</span>
                 </div>
               </div>
-              <a href="/order/1" class="button button_theme_normal additional-goods__order"> Заказать </a>
+              <a href="/order/1" class="button button_theme_normal additional-goods__order"><span class="button__text">Заказать</span></a>
             </li>
             <li class="additional-goods__item">
               <div class="additional-goods__name-price-wrapper">
@@ -265,7 +265,7 @@
                   <span class="additional-goods__price">50 р.</span>
                 </div>
               </div>
-              <a href="/order/2" class="button button_theme_normal additional-goods__order"> Заказать </a>
+              <a href="/order/1" class="button button_theme_normal additional-goods__order"><span class="button__text">Заказать</span></a>
             </li>
             <li class="additional-goods__item">
               <div class="additional-goods__name-price-wrapper">
@@ -275,7 +275,7 @@
                   <span class="additional-goods__price">100 р.</span>
                 </div>
               </div>
-              <a href="/order/3" class="button button_theme_normal additional-goods__order"> Заказать </a>
+              <a href="/order/1" class="button button_theme_normal additional-goods__order"><span class="button__text">Заказать</span></a>
             </li>
             <li class="additional-goods__item">
               <div class="additional-goods__name-price-wrapper">
@@ -285,7 +285,7 @@
                   <span class="additional-goods__price">300 р.</span>
                 </div>
               </div>
-              <a href="/order/4" class="button button_theme_normal additional-goods__order"> Заказать </a>
+              <a href="/order/1" class="button button_theme_normal additional-goods__order"><span class="button__text">Заказать</span></a>
             </li>
           </ul>
           <div class="additional-goods__order-all">
@@ -306,12 +306,20 @@
         </div>
       </section>
 
-      <section class="location location__grey-header">
+      <section class="location location_theme_grey">
         <div class="location__wrapper">
-          <h2 class="location__title">Приглашаем к сотрудничеству дилеров!</h2>
-          <p class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <div class="location__address-pane">
+            <h2 class="location__title">Приглашаем к сотрудничеству дилеров!</h2>
+            <p class="location__address">
+              <span class="location__street">ул. Большая Конюшенная, д. 19/8 </span>
+              <span class="location__city">Санкт-Петербург</span>
+            </p>
+          </div>
         </div>
-        <div class="location__map"></div>
+        <div class="location__map">
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A43fb9cfc560e6a718da44c55ff57837d60420b7b84a0261114fbed509573ed57&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+          <img class="location__pin" src="/img/map-pin.png" width="55px" alt="Иконка на карте" />
+        </div>
       </section>
     </main>
 

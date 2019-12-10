@@ -2,15 +2,11 @@
 
 }
 
-.textarea__wrapper {
+.textarea__control {
+  width: 100%;
   min-height: 150px;
   padding: 16px;
   border: solid 1px @bg-border-pinkish-grey;
-}
-
-.textarea__control {
-  width: 100%;
-  border: none;
   outline: 0;
 
   font-family: "Oswaldregular";
@@ -18,12 +14,8 @@
 }
 
 @media (min-width: @tablet-width) {
-  .textarea__wrapper {
-    min-height: 174px;
-    padding: 20px;
-  }
-
   .textarea__control {
+    min-height: 174px;
     font-size: 20px;
   }
 }
