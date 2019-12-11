@@ -26,7 +26,7 @@
   flex-wrap: wrap;
 
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .example__stat {
@@ -74,47 +74,83 @@
 
 .example__slider-list {
   min-height: 240px;
+
+  position: relative;
+  left: -20px;
 }
 
 @media (min-width: @tablet-width) {
   .example {
-    background: linear-gradient(to bottom, white 50%, @bg-grey 50%)
+    border-top: 1px solid @color-grey-2;
+    background: linear-gradient(to bottom, white 60%, @bg-grey 50%)
+  }
+
+  .example__title {
+    margin-bottom: 60px;
+
+    font-size: 60px;
+  }
+
+  .example__description {
+    margin-bottom: 56px;
+
+    font-size: 16px;
+    line-height: 1.5;
   }
 
   .example__wrapper {
-    width: 708px;
+    width: 768px;
+
+    padding: 40px 30px 60px;
   }
 
   .example__stat-wrapper {
     align-items: center;
     margin-top: 0;
+    margin-bottom: 80px;
   }
 
   .example__stat {
-    margin-right: 28px;
+    width: 162px;
+
+    padding: 16px;
+    margin-right: 42px;
   }
 
   .example__cost {
+    width: 180px;
     flex-grow: 0;
-    width: 140px;
 
     margin-top: 0;
     margin-left: auto;
+
+    font-size: 20px;
+    text-align: right;
+  }
+
+  .example__stat-value {
+    font-size: 30px;
   }
 
   .example__stat-category {
     background: white;
   }
+
+  .example__slider-list {
+    position: static;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .example {
+    border: none;
     background: linear-gradient(to bottom, white 30%, @bg-grey 30%)
   }
 
   .example__wrapper {
     display: flex;
     width: 1240px;
+    padding: 0 20px 72px;
   }
 
   .example__title {
@@ -129,21 +165,33 @@
 
   .example__data-wrapper {
     max-width: 420px;
-    margin-right: 140px;
+    margin-right: auto;
   }
 
   .example__stat-wrapper {
     justify-content: flex-start;
+    margin-bottom: 0;
   }
 
   .example__cost {
+    display: flex;
+
     width: 100%;
     margin-top: 62px;
     margin-left: 0;
   }
 
+  .example__cost-label {
+    margin-right: 64px;
+  }
+
   .example__stat-category {
     background: @bg-grey;
+  }
+
+  .example__slider {
+    position: relative;
+    top: -24px;
   }
 }
 

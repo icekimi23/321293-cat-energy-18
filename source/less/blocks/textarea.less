@@ -4,5 +4,22 @@
 
 .textarea__control {
   width: 100%;
+  min-height: 150px;
+  padding: 16px;
   border: solid 1px @bg-border-pinkish-grey;
+  outline: 0;
+
+  font-family: "Oswaldregular";
+  font-size: 16px;
+}
+
+@media (min-width: @tablet-width) {
+  .textarea__control {
+    min-height: 174px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
 }

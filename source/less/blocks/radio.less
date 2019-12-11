@@ -1,11 +1,96 @@
 .radio {
-  padding: 20px 0;
+
+}
+
+.radio__toggle {
+  display: flex;
+  align-items: center;
+
+  height: 30px;
+
+  &:hover .radio__box {
+    box-shadow: 0 0 0 1px @color-grey-4-hover;
+  }
 }
 
 .radio__label {
+  padding-left: 50px;
   text-transform: uppercase;
 }
 
 .radio__toggle + .radio__toggle {
   margin-top: 12px;
+}
+
+.radio__control {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+  &:checked + .radio__box::before {
+    display: inline-block;
+  }
+}
+
+.radio__box {
+  position: absolute;
+  z-index: -1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px @color-grey-4;
+
+  &::before {
+    content: '';
+    display: none;
+
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+
+    background-color: @bg-green;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .radio__toggle {
+    height: 40px;
+  }
+
+  .radio__label {
+    padding-left: 60px;
+    font-size: 20px;
+  }
+
+  .radio__box {
+    width: 40px;
+    height: 40px;
+
+    margin-right: 20px;
+
+    &::before {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+
 }
